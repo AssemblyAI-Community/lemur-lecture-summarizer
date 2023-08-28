@@ -1,0 +1,4 @@
+assemblyai==0.17.0
+streamlit==1.25.0
+python-dotenv==1.0.0
+yt-dlp==2023.7.6
