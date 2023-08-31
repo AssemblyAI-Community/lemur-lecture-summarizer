@@ -106,8 +106,7 @@ if input_key or environ_key:
 if f:
     entered = st.button("Submit")
     if entered:
-        st.session_state['entered'] = True
-        
+              
         transcript = get_transcript(f, ftype)
         if ftype == "Local file":
             os.remove(f)
@@ -124,11 +123,14 @@ if f:
         if context: params['context'] = context
         
         with st.spinner("Generating summary..."):
-            summary = transcript.lemur.summarize(**params)
-        
-        st.session_state['summary'] = summary.response.strip().split('\n')
-        print('session summary: ', st.session_state['summary'])
-
+            try:
+                summary = transcript.lemur.summarize(**params)
+                st.session_state['summary'] = summary.response.strip().split('\n')
+                st.session_state['entered'] = True
+                print('session summary: ', st.session_state['summary'])
+            except aai.types.LemurError as e:
+               st.write(f'Error: {str(e)}')
+               st.session_state['entered'] = False
 
 if st.session_state['entered']:
     "## Results"
