@@ -44,7 +44,8 @@ def set_aai_key():
 # MAIN APPLICATION CONTENT
 
 "# Lecture Summarizer"
-"Use this application to **automatically summarize a virtual lecture** and **ask questions** about the lesson material"
+"Use this application to **automatically summarize a virtual lecture** and **ask questions** about the lesson material."
+"Learn how to build this app [here](https://www.assemblyai.com/blog/build-an-interactive-lecture-summarization-app/)."
 
 with st.expander("Processing time"):
     "The time to process a file is 15-30% of the file's duration, so an hour-long lecture will take several minutes to process."
