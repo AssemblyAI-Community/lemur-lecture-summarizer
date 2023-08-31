@@ -14,7 +14,7 @@ You must have:
 
 1. Clone this repository and cd into it
     ```bash
-    git clone 
+    git clone https://github.com/AssemblyAI-Examples/lemur-lecture-summarizer.git
     cd lemur-lecture-summarizer
     ```
 
