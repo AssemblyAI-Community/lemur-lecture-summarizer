@@ -1,6 +1,6 @@
 # LeMUR Lecture Summarizer
 
-This application allows you to automatically summarize lectures and ask questions about the lesson material.
+This application allows you to automatically summarize lectures and ask questions about the lesson material. Learn how to build this application in the [associated blog](https://www.assemblyai.com/blog/build-an-interactive-lecture-summarization-app/).
 
 The application was tested with **Python 3.10.5**
 
