@@ -48,7 +48,7 @@ def set_aai_key():
 "Learn how to build this app [here](https://www.assemblyai.com/blog/build-an-interactive-lecture-summarization-app/)."
 
 with st.expander("Processing time"):
-    "The time to process a file is 15-30% of the file's duration, so an hour-long lecture will take several minutes to process."
+    "You can expect AssemblyAI's API to process a one hour lecture in less than a minute"
     "If a YouTube link is used, additional time will be required to extract the file."
 
 st.divider()
